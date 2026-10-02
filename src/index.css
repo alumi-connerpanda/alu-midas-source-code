@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-condensed: "Oswald", sans-serif;
+
+  --color-navy-950: #05091c;
+  --color-navy-900: #0a1138;
+  --color-navy-800: #121c4e;
+  --color-navy-700: #1a276a;
+  --color-navy-600: #25368a;
+
+  --color-brand-yellow: #f8c300;
+  --color-brand-yellow-hover: #e5b200;
+  --color-brand-yellow-light: #fff8db;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color-scheme: light;
+  }
+}
+
+.architectural-grid {
+  background-image: linear-gradient(to right, rgba(10, 17, 56, 0.04) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(10, 17, 56, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.architectural-grid-dark {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
